@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 
 export default function SimpleCounter() {
   const [counter, setCounter] = useState(0);
+  console.log(setCounter);
 
   function incrementCounter() {
+    console.log(setCounter);
     setCounter((counter) => counter + 1);
   }
 
